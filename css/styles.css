@@ -10,6 +10,7 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --line-color: #ececec;
   --border-color: #eeeeee;
+  --social-unactive: #afb1b8;
 }
 
 body {
@@ -252,12 +253,13 @@ body {
 /* Заголовки */
 .heading {
   margin: 0 0 50px 0;
+
+  color: var(--current-title-color);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
-  color: var(--current-title-color);
 }
 
 .title-features {
@@ -305,6 +307,29 @@ body {
   margin-right: 30px;
 }
 
+.thumb {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.antenna,
+.clock,
+.diagram,
+.astronaut {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
+}
+
 .filter {
   justify-content: center;
   margin-bottom: 50px;
@@ -344,10 +369,43 @@ body {
 }
 
 .cards-text {
-  margin: 0;
+  margin: 0 0 16px 0;
   padding: 0;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--social-unactive);
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item:hover,
+.social-item:focus {
+  color: var(--current-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Портфолио заголовки карточек */
