@@ -85,20 +85,21 @@ body {
   margin-right: 50px;
 }
 
-.menu > .card-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
 .work-card .card-body {
   border: 1px solid var(--border-color);
   border-top: 1px solid transparent;
   padding: 20px 24px;
 }
 
-.menu > .card-item:hover,
-.menu > .card-item:focus {
+.work-card:hover,
+.work-card:focus,
+.work-card:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.menu > .card-item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 
 .menu > .card-item:not(:nth-last-child(-n + 3)) {
