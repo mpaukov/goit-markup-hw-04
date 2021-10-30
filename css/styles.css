@@ -87,7 +87,7 @@ body {
 
 .work-card .card-body {
   border: 1px solid var(--border-color);
-  border-top: 1px solid transparent;
+  border-top: 0;
   padding: 20px 24px;
 }
 
@@ -213,8 +213,7 @@ body {
   cursor: pointer;
   min-height: 38px;
 
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
 
   font-family: inherit;
   font-style: inherit;
@@ -316,14 +315,15 @@ body {
 }
 
 .thumb {
+  display: flex;
   width: 100%;
   min-height: 120px;
-  border-radius: 4px;
 
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 
+  align-items: center;
+
+  border-radius: 4px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -423,6 +423,7 @@ body {
 .clients-item:hover,
 .clients-item:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients > .clients-list:not(:last-child) {
@@ -509,10 +510,7 @@ body {
 
 .footer > .container {
   display: flex;
-}
-
-.footer-social {
-  padding-top: 12px;
+  align-items: baseline;
 }
 
 .footer-social > .text {
