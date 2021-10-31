@@ -516,6 +516,7 @@ body {
 .footer-social > .text {
   margin-bottom: 20px;
   color: var(--current-white-color);
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
